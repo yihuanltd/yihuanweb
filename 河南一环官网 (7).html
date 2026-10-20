@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>河南一环环境工程有限公司 · 官方网站</title>
+<meta name="description" content="河南一环环境工程有限公司——环保工程设计、施工、设备制造、技术咨询、设施运营一站式服务商。拥有环保工程专业承包壹级资质，深耕医疗废水、工业废水、有机废气治理与中水回用领域。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%230d2740'/%3E%3Ccircle cx='16' cy='16' r='6.5' fill='none' stroke='%23c9a24b' stroke-width='2'/%3E%3Cpath d='M10 16h12M16 10v12' stroke='%23ffffff' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+<style>
+:root{
+  --navy:#0d2740;
+  --navy-deep:#081b2e;
+  --navy-soft:#163a5c;
+  --gold:#c9a24b;
+  --gold-deep:#a88434;
+  --paper:#f7f4ee;
+  --paper-2:#efe9dd;
+  --ink:#22313f;
+  --ink-soft:#5b6a78;
+  --line:#dcd5c7;
+  --white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:15px;
+}
+.serif{font-family:"Noto Serif SC","Songti SC","SimSun",serif;}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+
+/* ===== 视图切换 ===== */
+.view{display:none;}
+.view.active{display:block;}
+
+/* ===== 顶部导航 ===== */
+.topnav{
+  position:fixed;top:0;left:0;right:0;z-index:99;
+  background:rgba(8,27,46,.97);
+  backdrop-filter:blur(8px);
+  color:#fff;
+  border-bottom:1px solid rgba(201,162,75,.35);
+}
+.topnav .inner{
+  max-width:1200px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:10px 18px;
+}
+.topnav .brand{display:flex;align-items:center;gap:10px;min-width:0;cursor:pointer;}
+.topnav .brand img{width:38px;height:38px;border-radius:50%;flex:none;object-fit:cover;}
+.topnav .brand .txt{min-width:0;}
+.topnav .brand b{font-size:15px;letter-spacing:1px;white-space:nowrap;}
+.topnav .brand small{display:block;font-size:10px;color:#9fb2c4;letter-spacing:.4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.topnav .links{display:none;align-items:center;gap:26px;font-size:14px;color:#d7dee6;}
+.topnav .links a{padding:4px 2px;letter-spacing:1px;position:relative;cursor:pointer;}
+.topnav .links a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--gold);transform:scaleX(0);transition:transform .25s;}
+.topnav .links a:hover{color:var(--gold);}
+.topnav .links a.active::after{transform:scaleX(1);}
+.topnav .links a.active{color:var(--gold);}
+.burger{display:flex;flex-direction:column;gap:5px;padding:8px;cursor:pointer;background:none;border:none;}
+.burger span{width:22px;height:2px;background:var(--gold);transition:.3s;}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.burger.open span:nth-child(2){opacity:0;}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.mobile-menu{display:none;background:var(--navy-deep);border-top:1px solid rgba(201,162,75,.3);padding:8px 0 14px;}
+.mobile-menu.open{display:block;}
+.mobile-menu a{display:block;padding:12px 22px;color:#dfe7ee;font-size:15px;letter-spacing:2px;border-bottom:1px solid rgba(255,255,255,.05);cursor:pointer;}
+.mobile-menu a:last-child{border-bottom:none;}
+.mobile-menu a.active{color:var(--gold);}
+@media(min-width:860px){
+  .topnav .links{display:flex;}
+  .burger{display:none;}
+}
+
+/* ===== 通用容器 ===== */
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px;}
+.section{padding:56px 0;}
+.sec-head{margin-bottom:32px;}
+.sec-head .no{font-size:12px;letter-spacing:4px;color:var(--gold-deep);}
+.sec-head h2{font-size:26px;color:var(--navy);letter-spacing:2px;margin-top:4px;}
+.sec-head .en{font-size:11px;letter-spacing:2px;color:#9aa7b4;margin-top:4px;}
+.sec-head .line{width:56px;height:2px;background:var(--gold);margin-top:12px;}
+.sec-head.center{text-align:center;}
+.sec-head.center .line{margin-left:auto;margin-right:auto;}
+@media(min-width:768px){
+  .section{padding:76px 0;}
+  .sec-head h2{font-size:32px;}
+}
+
+/* ===== Hero 首页主视觉 ===== */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(160deg,#0a1a2e 0%,#12294a 50%,#1a3a63 100%);
+  color:#fff;
+  padding:120px 0 90px;
+  text-align:center;
+}
+.hero .bg{
+  position:absolute;inset:0;
+  background-image:url('https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/EYipbzMTroyGyNxI6L3cZFoJnCb');
+  background-size:cover;background-position:center;
+  opacity:.18;
+}
+.hero::before{
+  content:"";position:absolute;left:0;right:0;top:0;bottom:0;
+  background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:54px 54px;
+  pointer-events:none;
+}
+.hero .inner{position:relative;max-width:900px;margin:0 auto;padding:0 20px;}
+.hero .logo{width:100px;height:100px;border-radius:50%;margin:0 auto 22px;box-shadow:0 10px 34px rgba(0,0,0,.4);object-fit:cover;}
+.hero .kicker{display:inline-block;font-size:12px;letter-spacing:5px;color:var(--gold);border:1px solid rgba(201,162,75,.6);border-radius:2px;padding:5px 20px;margin-bottom:24px;}
+.hero h1{font-size:30px;font-weight:700;letter-spacing:5px;line-height:1.4;}
+.hero .en{font-size:11px;letter-spacing:2px;color:#aebfd0;margin-top:10px;line-height:1.6;}
+.hero .divider{width:72px;height:2px;background:var(--gold);margin:24px auto;}
+.hero .slogan{font-size:19px;letter-spacing:4px;color:#e8edf2;}
+.hero .tagline{font-size:12px;color:#93a7ba;margin-top:14px;letter-spacing:2px;}
+.hero .cta{margin-top:32px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.btn{
+  display:inline-block;padding:12px 32px;font-size:14px;letter-spacing:2px;cursor:pointer;
+  border:1px solid var(--gold);color:var(--gold);background:transparent;border-radius:2px;transition:.25s;
+  font-family:inherit;
+}
+.btn.solid{background:var(--gold);color:var(--navy-deep);font-weight:500;}
+.btn:hover{background:var(--gold);color:var(--navy-deep);}
+@media(min-width:768px){
+  .hero{padding:150px 0 110px;}
+  .hero h1{font-size:44px;letter-spacing:9px;}
+  .hero .en{font-size:13px;letter-spacing:3px;}
+  .hero .slogan{font-size:24px;}
+}
+
+/* ===== 首页简介摘要 ===== */
+.home-intro{padding:60px 0;}
+.home-intro .grid{display:grid;grid-template-columns:1fr;gap:30px;align-items:center;}
+.home-intro p{font-size:14.5px;color:#394a59;text-indent:2em;margin-bottom:12px;}
+.home-intro p b{color:var(--navy);}
+.home-intro .side{
+  background:var(--navy);color:#fff;padding:32px 28px;
+  position:relative;overflow:hidden;
+}
+.home-intro .side::after{content:"";position:absolute;right:-30px;bottom:-30px;width:120px;height:120px;border:2px solid rgba(201,162,75,.25);border-radius:50%;}
+.home-intro .side h3{font-size:18px;color:var(--gold);letter-spacing:2px;margin-bottom:16px;}
+.home-intro .side .row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:13px;}
+.home-intro .side .row:last-child{border-bottom:none;}
+.home-intro .side .k{color:#9fb2c4;}
+.home-intro .side .v{color:#fff;font-weight:600;}
+@media(min-width:900px){
+  .home-intro{padding:80px 0;}
+  .home-intro .grid{grid-template-columns:1.2fr .8fr;gap:50px;}
+  .home-intro p{font-size:15px;}
+}
+
+/* ===== 业务入口大卡片（首页） ===== */
+.home-biz{background:var(--white);padding:60px 0;}
+.biz-entry{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
+.biz-card{
+  position:relative;background:var(--paper);border:1px solid var(--line);
+  padding:28px 20px;text-align:center;cursor:pointer;transition:.25s;overflow:hidden;
+}
+.biz-card:hover{background:var(--navy);color:#fff;transform:translateY(-3px);box-shadow:0 10px 30px rgba(13,39,64,.18);}
+.biz-card:hover .t{color:var(--gold);}
+.biz-card:hover .d{color:#c8d4e0;}
+.biz-card .ic{
+  width:64px;height:64px;border-radius:50%;background:var(--navy);color:var(--gold);
+  display:flex;align-items:center;justify-content:center;margin:0 auto 16px;
+  transition:.25s;
+}
+.biz-card:hover .ic{background:var(--gold);color:var(--navy);}
+.biz-card .ic svg{width:34px;height:34px;}
+.biz-card .t{font-size:17px;color:var(--navy);font-weight:700;letter-spacing:2px;transition:.25s;}
+.biz-card .d{font-size:12.5px;color:var(--ink-soft);margin-top:8px;line-height:1.8;transition:.25s;}
+.biz-card .arrow{position:absolute;right:14px;bottom:12px;font-size:18px;color:var(--gold);opacity:0;transition:.25s;}
+.biz-card:hover .arrow{opacity:1;}
+@media(min-width:768px){
+  .home-biz{padding:80px 0;}
+  .biz-entry{grid-template-columns:repeat(4,1fr);gap:18px;}
+  .biz-card{padding:36px 22px;}
+  .biz-card .ic{width:72px;height:72px;}
+  .biz-card .ic svg{width:38px;height:38px;}
+  .biz-card .t{font-size:18px;}
+}
+
+/* ===== 数据条 ===== */
+.statbar{background:linear-gradient(135deg,#0d2038 0%,#16304f 100%);color:#fff;padding:48px 0;border-top:1px solid rgba(201,162,75,.15);}
+.statbar .inner{display:grid;grid-template-columns:repeat(2,1fr);gap:26px 16px;text-align:center;}
+.statbar .num{font-size:30px;color:var(--gold);font-weight:700;font-family:"Noto Serif SC",serif;text-shadow:0 2px 12px rgba(201,162,75,.25);}
+.statbar .lbl{font-size:12px;color:#a9bccd;margin-top:4px;letter-spacing:1px;}
+@media(min-width:768px){.statbar .inner{grid-template-columns:repeat(4,1fr);}.statbar .num{font-size:40px;}}
+
+/* ===== 精选案例大图入口（首页） ===== */
+.home-cases{padding:60px 0;}
+.case-feature{display:grid;grid-template-columns:1fr;gap:18px;}
+.cf-card{
+  position:relative;height:220px;overflow:hidden;cursor:pointer;
+  background:var(--navy);
+}
+.cf-card img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  transition:.4s;
+}
+.cf-card:hover img{transform:scale(1.06);}
+.cf-card .mask{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(8,27,46,.15) 0%,rgba(8,27,46,.88) 100%);
+}
+.cf-card .info{position:absolute;left:0;right:0;bottom:0;padding:20px 22px;color:#fff;}
+.cf-card .cat{font-size:11px;letter-spacing:3px;color:var(--gold);margin-bottom:6px;}
+.cf-card .name{font-size:17px;font-weight:700;letter-spacing:1px;}
+.cf-card .desc{font-size:12px;color:#c0cfdd;margin-top:6px;line-height:1.6;}
+@media(min-width:768px){
+  .home-cases{padding:80px 0;}
+  .case-feature{grid-template-columns:repeat(3,1fr);gap:20px;}
+  .cf-card{height:280px;}
+}
+
+/* ===== 页头（二级页通用 banner） ===== */
+.breadcrumb{padding-top:80px;}
+@media(min-width:768px){.breadcrumb{padding-top:72px;}}
+.page-hero{
+  position:relative;background:var(--navy);color:#fff;
+  padding:48px 0 52px;text-align:center;overflow:hidden;
+}
+.page-hero::before{
+  content:"";position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:48px 48px;
+}
+.page-hero h1{font-size:26px;letter-spacing:5px;position:relative;}
+.page-hero .en{font-size:11px;letter-spacing:2px;color:#8fa3b8;margin-top:8px;position:relative;}
+.page-hero .line{width:56px;height:2px;background:var(--gold);margin:16px auto 0;position:relative;}
+.page-hero .crumb{font-size:12px;color:#8fa3b8;margin-top:14px;position:relative;letter-spacing:1px;}
+.page-hero .crumb a{color:var(--gold);cursor:pointer;}
+@media(min-width:768px){.page-hero{padding:60px 0 68px;}.page-hero h1{font-size:34px;}}
+
+/* ===== 公司简介页 ===== */
+.intro-grid{display:grid;grid-template-columns:1fr;gap:28px;}
+.intro-grid .left p{font-size:14px;color:#394a59;text-indent:2em;margin-bottom:12px;}
+.intro-grid .left p b{color:var(--navy);}
+.facts{background:var(--white);border:1px solid var(--line);border-left:4px solid var(--gold);padding:22px 24px;position:relative;overflow:hidden;}
+.facts .facts-bg{
+  position:absolute;inset:0;z-index:0;opacity:0.06;
+  background:url('https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Rrx0bST67oiyjcx884mci5Pynnf') center/cover no-repeat;
+  pointer-events:none;
+}
+.facts h3,.facts .row{position:relative;z-index:1;}
+.facts h3{font-size:16px;color:var(--navy);margin-bottom:12px;letter-spacing:1px;}
+.facts .row{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:13px;}
+.facts .row:last-child{border-bottom:none;}
+.facts .row .k{color:var(--ink-soft);flex:none;}
+.facts .row .v{color:var(--navy);font-weight:600;text-align:right;}
+@media(min-width:900px){
+  .intro-grid{grid-template-columns:1.15fr .85fr;gap:44px;}
+  .intro-grid .left p{font-size:15px;}
+}
+
+/* ===== 文化 ===== */
+.culture{background:var(--navy);color:#dfe7ee;padding:56px 0;}
+.culture .sec-head h2{color:#fff;}
+.culture .sec-head .en{color:#7e92a6;}
+.culture-slogan{text-align:center;margin:6px 0 36px;}
+.culture-slogan .big{font-size:24px;letter-spacing:6px;color:var(--gold);}
+.culture-slogan .sub{font-size:12px;letter-spacing:4px;color:#8fa3b8;margin-top:10px;}
+.culture-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.cult-card{background:rgba(255,255,255,.05);border:1px solid rgba(201,162,75,.35);padding:24px 18px;text-align:center;}
+.cult-card .n{font-size:12px;letter-spacing:3px;color:var(--gold);margin-bottom:12px;}
+.cult-card .t{font-size:15px;color:#fff;line-height:1.8;letter-spacing:1px;}
+@media(min-width:768px){
+  .culture{padding:76px 0;}
+  .culture-slogan .big{font-size:32px;}
+  .culture-grid{grid-template-columns:repeat(4,1fr);gap:18px;}
+  .cult-card{padding:28px 22px;}
+  .cult-card .t{font-size:16px;}
+}
+
+/* ===== 资质 ===== */
+.cert-grid{display:grid;grid-template-columns:1fr;gap:16px;}
+.cert-card{background:var(--white);border:1px solid var(--line);border-top:4px solid var(--navy);padding:22px 20px;}
+.cert-card .t{font-size:16px;color:var(--navy);font-weight:700;margin-bottom:10px;}
+.cert-card .t span{color:var(--gold);margin-right:8px;}
+.cert-card .meta{font-size:12.5px;color:var(--ink-soft);line-height:2;}
+.cert-card .meta b{color:#394a59;}
+.cert-card .badge{display:inline-block;margin-top:10px;background:var(--paper-2);color:var(--navy);font-size:11px;padding:3px 12px;border-radius:2px;letter-spacing:1px;}
+@media(min-width:768px){.cert-grid{grid-template-columns:repeat(3,1fr);}}
+
+/* 证书并排展示（首页） */
+.cert-imgs-home{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;max-width:1100px;margin:0 auto;}
+.cert-imgs-home img{width:100%;height:200px;object-fit:contain;box-shadow:0 4px 16px rgba(13,39,64,.1);border-radius:2px;background:#fff;padding:6px;}
+@media(max-width:900px){.cert-imgs-home{grid-template-columns:repeat(2,1fr);}.cert-imgs-home img{height:180px;}}
+@media(max-width:500px){.cert-imgs-home{grid-template-columns:1fr;}.cert-imgs-home img{height:200px;}}
+.cert-carousel{position:relative;max-width:680px;margin:0 auto;}
+.cert-track{position:relative;height:440px;border-radius:4px;}
+.cert-slide{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .5s ease;pointer-events:none;}
+.cert-slide.active{opacity:1;pointer-events:auto;}
+.cert-slide img{max-height:420px;width:auto;max-width:100%;object-fit:contain;box-shadow:0 6px 24px rgba(13,39,64,.12);}
+.cert-nav{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.9);border:1px solid var(--line);color:var(--navy);font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;transition:.2s;}
+.cert-nav:hover{background:var(--gold);color:#fff;border-color:var(--gold);}
+.cert-nav.prev{left:-16px;}
+.cert-nav.next{right:-16px;}
+.cert-dots{text-align:center;margin-top:18px;}
+.cert-dots span{display:inline-block;width:8px;height:8px;border-radius:50%;background:#c8d4e0;margin:0 4px;cursor:pointer;transition:.2s;}
+.cert-dots span.active{background:var(--gold);width:24px;border-radius:4px;}
+@media(max-width:768px){.cert-track{height:340px;}.cert-slide img{max-height:320px;}.cert-nav.prev{left:4px;}.cert-nav.next{right:4px;}}
+.cert-imgs{display:grid;grid-template-columns:1fr;gap:20px;margin-top:32px;}
+.cert-img-col{display:flex;flex-direction:column;gap:16px;}
+.cert-img-card{background:var(--white);border:1px solid var(--line);padding:14px;}
+.cert-img-card img{width:100%;height:auto;object-fit:contain;display:block;}
+.cert-img-card .cap{text-align:center;font-size:12.5px;color:var(--ink-soft);margin-top:12px;letter-spacing:1px;}
+@media(min-width:768px){.cert-imgs{grid-template-columns:repeat(3,1fr);gap:24px;}}
+
+/* ===== 业务详情页（二级） ===== */
+.biz-detail{display:grid;grid-template-columns:1fr;gap:20px;}
+.biz-dcard{background:var(--white);border:1px solid var(--line);border-left:4px solid var(--navy);padding:26px 24px;transition:.25s;}
+.biz-dcard:hover{box-shadow:0 6px 20px rgba(13,39,64,.1);}
+.biz-dcard .head{display:flex;align-items:center;gap:16px;margin-bottom:14px;}
+.biz-dcard .ic{
+  width:60px;height:60px;border-radius:50%;background:var(--navy);color:var(--gold);
+  display:flex;align-items:center;justify-content:center;flex:none;
+}
+.biz-dcard .ic svg{width:32px;height:32px;}
+.biz-dcard .t{font-size:19px;color:var(--navy);font-weight:700;letter-spacing:2px;}
+.biz-dcard .en{font-size:11px;color:#9aa7b4;letter-spacing:1px;margin-top:2px;}
+.biz-dcard .d{font-size:14px;color:#394a59;line-height:2;}
+.biz-dcard .d b{color:var(--navy);}
+@media(min-width:768px){.biz-detail{gap:22px;}}
+
+/* ===== 服务流程 ===== */
+.flow{display:grid;grid-template-columns:1fr;gap:0;counter-reset:flow;}
+.flow-step{position:relative;padding:0 0 30px 34px;border-left:2px solid var(--gold);}
+.flow-step:last-child{padding-bottom:0;}
+.flow-step::before{
+  counter-increment:flow;content:counter(flow,decimal-leading-zero);
+  position:absolute;left:-16px;top:0;width:32px;height:32px;border-radius:50%;
+  background:var(--navy);color:var(--gold);font-size:12px;letter-spacing:1px;
+  display:flex;align-items:center;justify-content:center;font-family:"Noto Serif SC",serif;
+}
+.flow-step .t{font-size:16px;color:var(--navy);font-weight:700;}
+.flow-step .d{font-size:13px;color:var(--ink-soft);margin-top:6px;line-height:1.9;}
+@media(min-width:768px){
+  .flow{grid-template-columns:repeat(5,1fr);gap:20px;}
+  .flow-step{border-left:none;border-top:2px solid var(--gold);padding:26px 12px 0 0;}
+  .flow-step::before{left:0;top:-17px;}
+}
+
+/* ===== 车间图片（自然比例，不裁切） ===== */
+.ws-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}
+.ws-grid img{width:100%;height:auto;object-fit:contain;background:var(--paper-2);}
+.ws-desc{font-size:14px;color:#394a59;margin-bottom:20px;line-height:2;text-indent:2em;}
+@media(min-width:768px){.ws-grid{gap:14px;}}
+
+/* ===== 案例分类入口（三级页：总览） ===== */
+.cat-grid{display:grid;grid-template-columns:1fr;gap:18px;}
+.cat-card{
+  position:relative;height:200px;overflow:hidden;cursor:pointer;background:var(--navy);
+}
+.cat-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.4s;}
+.cat-card:hover img{transform:scale(1.06);}
+.cat-card .mask{position:absolute;inset:0;background:linear-gradient(135deg,rgba(8,27,46,.55),rgba(8,27,46,.85));}
+.cat-card .info{position:absolute;left:0;right:0;bottom:0;padding:22px;color:#fff;}
+.cat-card .num{font-size:12px;color:var(--gold);letter-spacing:3px;}
+.cat-card .name{font-size:20px;font-weight:700;letter-spacing:2px;margin-top:6px;}
+.cat-card .desc{font-size:12.5px;color:#c0cfdd;margin-top:8px;line-height:1.7;}
+@media(min-width:768px){
+  .cat-grid{grid-template-columns:repeat(2,1fr);gap:22px;}
+  .cat-card{height:230px;}
+}
+
+/* ===== 案例卡片（自然比例图片） ===== */
+.case-group{margin-bottom:48px;}
+.case-group:last-child{margin-bottom:0;}
+.case-group h3{font-size:20px;color:var(--navy);display:flex;align-items:center;gap:12px;margin-bottom:4px;}
+.case-group h3::before{content:"";width:5px;height:22px;background:var(--gold);flex:none;}
+.case-group .note{font-size:13px;color:var(--ink-soft);margin-bottom:20px;}
+.back-bar{margin-bottom:24px;}
+.back-btn{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:13px;color:var(--navy);cursor:pointer;
+  background:var(--white);border:1px solid var(--line);padding:8px 18px;border-radius:2px;transition:.2s;
+}
+.back-btn:hover{border-color:var(--gold);color:var(--gold);}
+.case-card{background:var(--white);border:1px solid var(--line);margin-bottom:20px;overflow:hidden;box-shadow:0 2px 12px rgba(13,39,64,.06);transition:.3s;}
+.case-card:hover{box-shadow:0 8px 28px rgba(13,39,64,.12);}
+.case-card .hd{display:flex;flex-direction:column;gap:8px;padding:16px 20px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fff,var(--paper));}
+.case-card .hd .name{font-size:17px;color:var(--navy);font-weight:700;}
+.case-card .hd .scope{font-size:11px;color:var(--gold-deep);letter-spacing:2px;border:1px solid var(--gold);padding:2px 10px;border-radius:2px;align-self:flex-start;}
+.case-card .bd{padding:18px 20px;}
+.case-card .desc{font-size:13.5px;color:#394a59;line-height:1.95;}
+.case-card .desc b{color:var(--navy);}
+.case-card .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
+.case-card .tags span{font-size:11px;background:var(--paper-2);color:#4a5a69;padding:3px 10px;border-radius:2px;}
+/* 图片田字格等高布局，无白边 */
+.case-card .imgs{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:16px;}
+.case-card .imgs img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
+.case-card.single-img .imgs{grid-template-columns:1fr;}
+.case-card.single-img .imgs img{aspect-ratio:auto;object-fit:contain;}
+@media(min-width:768px){
+  .case-card .hd{flex-direction:row;justify-content:space-between;align-items:center;padding:18px 24px;}
+  .case-card .hd .name{font-size:18px;}
+  .case-card .bd{padding:22px 24px;}
+  .case-card .imgs{gap:12px;}
+}
+
+/* ===== 环保业绩 ===== */
+.perf-grid{display:grid;grid-template-columns:1fr;gap:22px;}
+.perf-col{background:var(--white);border:1px solid var(--line);}
+.perf-col .tt{background:var(--navy);color:var(--gold);padding:10px 18px;font-size:13px;letter-spacing:2px;}
+.perf-col ol{list-style:none;counter-reset:li;padding:8px 18px 14px;}
+.perf-col li{counter-increment:li;font-size:12.5px;color:#394a59;padding:7px 0 7px 32px;position:relative;border-bottom:1px dashed var(--line);}
+.perf-col li:last-child{border-bottom:none;}
+.perf-col li::before{content:counter(li);position:absolute;left:2px;top:9px;width:22px;height:22px;background:var(--paper-2);color:var(--navy);font-size:11px;display:flex;align-items:center;justify-content:center;border-radius:50%;}
+@media(min-width:900px){.perf-grid{grid-template-columns:repeat(3,1fr);}}
+
+/* ===== 联系 ===== */
+.contact-grid{display:grid;grid-template-columns:1fr;gap:26px;}
+.contact-card{background:var(--white);border:1px solid var(--line);padding:22px 20px;border-left:4px solid var(--gold);}
+.contact-card .k{font-size:12px;color:var(--gold-deep);letter-spacing:2px;margin-bottom:8px;}
+.contact-card .v{font-size:16px;color:var(--navy);font-weight:700;}
+.contact-card .sub{font-size:12.5px;color:var(--ink-soft);margin-top:4px;}
+.form-box{background:var(--white);border:1px solid var(--line);padding:24px 20px;}
+.form-box h3{font-size:18px;color:var(--navy);margin-bottom:6px;}
+.form-box .tip{font-size:12.5px;color:var(--ink-soft);margin-bottom:18px;}
+.form-box label{display:block;font-size:13px;color:var(--navy);margin:14px 0 6px;}
+.form-box input,.form-box textarea{
+  width:100%;padding:11px 14px;font-size:15px;border:1px solid var(--line);
+  background:var(--paper);color:var(--ink);border-radius:2px;font-family:inherit;
+}
+.form-box input:focus,.form-box textarea:focus{outline:none;border-color:var(--gold);}
+.form-box textarea{min-height:110px;resize:vertical;}
+.form-msg{margin-top:14px;font-size:13.5px;color:var(--navy);display:none;}
+@media(min-width:900px){.contact-grid{grid-template-columns:1fr 1.1fr;gap:34px;}}
+
+/* ===== 页脚 ===== */
+.footer{background:linear-gradient(180deg,#0a1a2e 0%,#0d2038 100%);color:#dfe7ee;padding:56px 0 36px;position:relative;overflow:hidden;margin-top:0;}
+.footer::before{content:"";position:absolute;left:0;right:0;top:0;bottom:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:54px 54px;pointer-events:none;}
+.footer .inner{max-width:1200px;margin:0 auto;padding:0 20px;position:relative;text-align:center;}
+.footer .logo{width:76px;height:76px;border-radius:50%;margin:0 auto 18px;object-fit:cover;}
+.footer .name{font-size:21px;letter-spacing:5px;color:#fff;}
+.footer .en{font-size:11px;letter-spacing:2px;color:#8fa3b8;margin-top:8px;}
+.footer .slogan{color:var(--gold);letter-spacing:3px;margin:20px 0 28px;font-size:14px;}
+.footer .contact{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:860px;margin:0 auto;}
+.footer .contact .item{background:rgba(255,255,255,.05);border:1px solid rgba(201,162,75,.3);padding:16px 10px;}
+.footer .contact .item .k{font-size:11px;color:#8fa3b8;letter-spacing:2px;}
+.footer .contact .item .v{font-size:13px;color:#fff;margin-top:6px;word-break:break-all;}
+.footer .copy{font-size:11.5px;color:#6d8196;margin-top:30px;letter-spacing:1px;}
+@media(min-width:768px){
+  .footer{padding:70px 0 44px;}
+  .footer .name{font-size:24px;}
+  .footer .contact{grid-template-columns:repeat(4,1fr);gap:16px;}
+  .footer .contact .item .v{font-size:14px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 顶部导航 ===== -->
+<nav class="topnav" id="topnav">
+  <div class="inner">
+    <a class="brand" data-nav="home">
+      <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/OXHYbq0xMoKEZZxDFSccBpv0nCf" alt="河南一环环境工程有限公司 logo">
+      <span class="txt"><b>河南一环环境工程</b><small>HENAN YIHUAN ENVIRONMENTAL ENGINEERING CO., LTD</small></span>
+    </a>
+    <div class="links" id="navlinks">
+      <a data-nav="home" class="active">首页</a>
+      <a data-nav="about">公司简介</a>
+      <a data-nav="biz">业务领域</a>
+      <a data-nav="cases">工程案例</a>
+      <a data-nav="perf">环保业绩</a>
+      <a data-nav="contact">联系我们</a>
+    </div>
+    <button class="burger" id="burger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a data-nav="home" class="active">首页</a>
+    <a data-nav="about">公司简介</a>
+    <a data-nav="biz">业务领域</a>
+    <a data-nav="cases">工程案例</a>
+    <a data-nav="perf">环保业绩</a>
+    <a data-nav="contact">联系我们</a>
+  </div>
+</nav>
+
+<!-- ============ 视图：首页 ============ -->
+<section class="view active" id="view-home">
+  <header class="hero">
+    <div class="bg"></div>
+    <div class="inner">
+      <div class="kicker">环境综合治理 · 一站式服务商</div>
+      <img class="logo" src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/OXHYbq0xMoKEZZxDFSccBpv0nCf" alt="河南一环环境工程有限公司 logo">
+      <h1 class="serif">河南一环环境工程有限公司</h1>
+      <div class="en">HENAN YIHUAN ENVIRONMENTAL ENGINEERING CO., LTD</div>
+      <div class="divider"></div>
+      <div class="slogan serif">清水一泓 · 五洲环流</div>
+      <div class="tagline">以质量求生存 · 诚信合作双赢　|　环保工程专业承包壹级资质</div>
+      <div class="cta">
+        <a class="btn solid" data-nav="about">了解公司</a>
+        <a class="btn" data-nav="cases">查看案例</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 公司简介 -->
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="no">01</div>
+        <h2 class="serif">公司简介</h2>
+        <div class="en">Company Profile</div>
+        <div class="line"></div>
+      </div>
+      <div class="intro-grid">
+        <div class="left">
+          <p>河南一环环境工程有限公司成立于<b>2011年</b>，总部位于河南省南阳市，是一家集环保工程设计、施工、设备制造、技术咨询与设施运营于一体的环境工程专业企业。公司持有环保工程专业承包壹级资质、环境影响评价资质及环境污染治理资质，可承接各类水污染治理、大气污染治理工程，为客户提供从环境影响评价、方案设计、设备制造、工程安装到运营维护的全过程服务。</p>
+          <p>公司主要从事生活污水、市政污水、医疗废水、工业废水及各类工业废气的治理工程。在水处理领域，可承接城镇生活污水处理、医疗机构污水处理、工业园区及工业企业废水处理、中水回用等工程；在废气治理领域，可承接工业粉尘、有机废气、酸碱废气及异味治理等工程。公司同时提供环保成套设备制造、环保设施运营和环境技术咨询服务，可根据客户的水质、气量特点和排放标准，因地制宜设计治理方案，做到工程达标排放、设施稳定运行。</p>
+          <p>公司具备自有环保装备制造能力，可生产、加工污水处理成套设备及废气净化设备等环保装备，主要设备自主制造、自主安装，有利于控制工程质量、缩短建设周期。公司在工程建设中严格执行国家环保工程相关标准和规范，从方案设计、材料采购、设备制作、安装调试到竣工验收实行全过程质量管控，确保工程质量可靠、运行长期稳定。</p>
+          <p>公司下设六个部门，拥有一支专业配置齐全、工程经验丰富的技术与施工团队。现有环境工程高级技术工程师5人、环境影响评价师5人、中级工程师15人、环境专业硕士8人，专业施工队伍6支，从业人员120余人。公司重视技术进步，与多家高校保持合作，围绕废水、废气治理开展技术研发和工艺改进，推动新技术、新工艺在工程中的应用，持续提升治理效果。</p>
+          <p>公司坚持"以质量求生存、诚信合作双赢"的经营理念，把工程质量和客户信誉放在首位。自成立以来，公司先后完成了大量生活、市政、医疗及工业废水和工业废气治理工程，积累了较为丰富的设计、施工和运营经验，以稳定的达标效果和周到的后期服务赢得客户认可。面向未来，公司将继续深耕生态环保主业，按照减污降碳的要求，为客户提供更可靠、更经济、更实用的环境治理服务，为改善区域生态环境质量、守护绿水青山贡献力量。</p>
+        </div>
+        <div class="facts" style="position:relative;overflow:hidden;">
+          <div class="facts-bg"></div>
+          <h3 class="serif">企业名片</h3>
+          <div class="row"><span class="k">成立时间</span><span class="v">2011年</span></div>
+          <div class="row"><span class="k">总部地址</span><span class="v">河南省南阳市光武大道三川金融街</span></div>
+          <div class="row"><span class="k">核心资质</span><span class="v">环保工程专业承包壹级</span></div>
+          <div class="row"><span class="k">高级工程师</span><span class="v">5 人</span></div>
+          <div class="row"><span class="k">中级工程师</span><span class="v">15 人</span></div>
+          <div class="row"><span class="k">环评师</span><span class="v">5 人</span></div>
+          <div class="row"><span class="k">从业人员</span><span class="v">120 余人</span></div>
+          <div class="row"><span class="k">施工队伍</span><span class="v">6 支专业队伍</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 业务领域 -->
+  <div class="section" style="background:var(--white);">
+    <div class="wrap">
+      <div class="sec-head center">
+        <div class="no">02</div>
+        <h2 class="serif">业务领域</h2>
+        <div class="en">Business Scope</div>
+        <div class="line"></div>
+      </div>
+      <div class="biz-entry">
+        <div class="biz-card" data-nav="biz">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2C8 6 5 9.5 5 13a7 7 0 0 0 14 0c0-3.5-3-7-7-11z"/></svg></div>
+          <div class="t">环保工程</div>
+          <div class="d">废水、废气、噪声治理设计施工一体化交付</div>
+          <div class="arrow">→</div>
+        </div>
+        <div class="biz-card" data-nav="biz">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
+          <div class="t">环保设备</div>
+          <div class="d">自有制造基地，成套设备全链条自制</div>
+          <div class="arrow">→</div>
+        </div>
+        <div class="biz-card" data-nav="biz">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <div class="t">设施运营</div>
+          <div class="d">运营托管、维护保养、长期达标保障</div>
+          <div class="arrow">→</div>
+        </div>
+        <div class="biz-card" data-nav="biz">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20h16"/><path d="M6 16l3-8 4 5 3-6 2 9"/></svg></div>
+          <div class="t">技术咨询</div>
+          <div class="d">环评编制、验收服务、全过程技术支撑</div>
+          <div class="arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 数据条 -->
+  <div class="statbar">
+    <div class="wrap">
+      <div class="inner">
+        <div><div class="num">50+</div><div class="lbl">重点工程案例</div></div>
+        <div><div class="num">400+</div><div class="lbl">环保工程业绩</div></div>
+        <div><div class="num">120+</div><div class="lbl">从业人员</div></div>
+        <div><div class="num">壹级</div><div class="lbl">环保工程承包资质</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 资质荣誉 -->
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="no">03</div>
+        <h2 class="serif">资质荣誉</h2>
+        <div class="en">Company Qualification</div>
+        <div class="line"></div>
+      </div>
+      <div class="cert-imgs-home">
+        <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/GRrIbwRbvocfX0xhW2ScskBFnPe" alt="建筑业企业资质证书">
+        <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/No0kbpdeZojntLxM3Fuc57dBnqd" alt="营业执照">
+        <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/GStFbsCqAoYV0BxsdepcZTZOnTG" alt="安全生产许可证">
+        <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/P8uobC1vNoAdsgx8baDcVMKhnyh" alt="环境污染治理能力评价证书（水污染）">
+        <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Grs6baXX2oPNgXx6Acxc0Q75nWc" alt="环境污染治理能力评价证书（大气污染）">
+      </div>
+    </div>
+  </div>
+
+  <!-- 重点案例 -->
+  <div class="section" style="background:var(--white);">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="no">04</div>
+        <h2 class="serif">重点案例</h2>
+        <div class="en">Selected Projects</div>
+        <div class="line"></div>
+      </div>
+      <div class="case-card" style="margin-bottom:18px;">
+        <div class="hd"><div class="name serif">南阳市中心医院 医疗废水处理工程</div><div class="scope">3500 吨/天</div></div>
+        <div class="bd">
+          <div class="desc">污水处理站于2018年建成投用，主要采用<b>"厌氧生物膜法+好氧生物膜法+沉淀+消毒"</b>工艺，构筑物全地下钢筋混凝土结构，顶部可供大型车辆通行，配套控制室、风机房、污泥脱水机房、消毒间等设施。</div>
+          <div class="tags"><span>设计施工一体化</span><span>全地下结构</span><span>2018年投用</span></div>
+          <div class="imgs">
+            <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Z2sAbE5W4o6AipxI1lmcn36BnWe" alt="中心医院污水处理站附属用房外观">
+            <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/J99vbPXWJoz5fbxYbZscCXXQnIh" alt="中心医院风机房罗茨风机设备">
+          </div>
+        </div>
+      </div>
+      <div class="case-card" style="margin-bottom:18px;">
+        <div class="hd"><div class="name serif">淮滨县第二污水处理厂 扩建工程</div><div class="scope">5万 m³/d 设备供货</div></div>
+        <div class="bd">
+          <div class="desc">扩建工程使总处理规模达到<b>10万m³/d</b>。我公司提供处理能力为<b>5万m³/d的一体化涡凹气浮机及配套电气自控系统</b>，目前设备已全部安装完毕。</div>
+          <div class="tags"><span>一体化涡凹气浮机</span><span>配套电气自控系统</span></div>
+          <div class="imgs" style="grid-template-columns:1fr;">
+            <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/MwgaboXvao4hhzxTcAacXG3anxc" alt="淮滨县第二污水处理厂扩建工程" style="aspect-ratio:auto;object-fit:contain;">
+          </div>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="hd"><div class="name serif">金冠电气股份有限公司 有机废气处理项目</div><div class="scope">20000 m³/h</div></div>
+        <div class="bd">
+          <div class="desc">金冠电气新增玻璃釉生产线，废气主要污染物为颗粒物和有机污染物。处理能力<b>20000m³/h</b>，工艺采用<b>"气旋塔+除雾过滤+干式过滤器+RCO催化燃烧"</b>，满足豫环攻坚办【2017】162号限值要求达标排放。</div>
+          <div class="tags"><span>RCO催化燃烧</span><span>豫环攻坚办162号达标</span></div>
+          <div class="imgs">
+            <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/JpGlb32peoIXGUxsmrkcvfqcntf" alt="金冠电气废气处理设备">
+            <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/CFzdbuP0TonLMdxNFyRctMgKneS" alt="废气处理监控界面">
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:28px;">
+        <a class="btn solid" data-nav="cases">查看全部工程案例 →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 服务流程 -->
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="no">05</div>
+        <h2 class="serif">服务流程</h2>
+        <div class="en">Service Process</div>
+        <div class="line"></div>
+      </div>
+      <div class="flow">
+        <div class="flow-step"><div class="t">需求对接</div><div class="d">实地勘察水质水量与排放要求，明确治理目标与执行标准。</div></div>
+        <div class="flow-step"><div class="t">方案设计</div><div class="d">编制技术方案与工程造价，多方案比选，确定最优工艺路线。</div></div>
+        <div class="flow-step"><div class="t">制造施工</div><div class="d">自有车间设备制造，专业施工队伍现场安装，全程质量管控。</div></div>
+        <div class="flow-step"><div class="t">调试达标</div><div class="d">系统调试运行至出水/排放稳定达标，培训业主操作人员。</div></div>
+        <div class="flow-step"><div class="t">运营服务</div><div class="d">质保期内跟踪维护，长期提供运营管理与技术咨询服务。</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 视图：公司简介 ============ -->
+<section class="view" id="view-about">
+  <div class="breadcrumb"></div>
+  <div class="page-hero">
+    <h1 class="serif">公司简介</h1>
+    <div class="en">Company Profile</div>
+    <div class="line"></div>
+    <div class="crumb">首页 / 公司简介</div>
+  </div>
+  <div class="section">
+    <div class="wrap">
+      <div class="intro-grid">
+        <div class="left">
+          <p>河南一环环境工程有限公司成立于<b>2011年</b>，总部位于河南省南阳市，是一家集<b>环保工程设计、施工、设备制造、技术咨询、设施运营</b>于一体的环境工程公司，拥有环保工程专业承包壹级资质、环境影响评价资质及环境污染治理资质等相关证书。</p>
+          <p>公司下设六个部门，拥有一支专业配置齐全、工程经验丰富的技术与施工团队。现有环境工程高级技术工程师5人、环境影响评价师5人、中级工程师15人、环境专业硕士8人，专业施工队伍6支，从业人员120余人。公司重视技术进步，与多家高校保持合作，围绕废水、废气治理开展技术研发和工艺改进，推动新技术、新工艺在工程中的应用，持续提升治理效果。</p>
+          <p>公司坚持"以质量求生存、诚信合作双赢"的原则，全心全意为环境保护事业做贡献，为企业创造效益，兢兢业业为客户服务。</p>
+          <p>为一方人，做一番事，守一方水土，创一片蓝天。一环人正意气风发迈进环保新时代，积极进取的一环明天会更灿烂。</p>
+        </div>
+        <div class="facts">
+          <h3 class="serif">企业名片</h3>
+          <div class="row"><span class="k">成立时间</span><span class="v">2011年</span></div>
+          <div class="row"><span class="k">总部地址</span><span class="v">河南 · 南阳</span></div>
+          <div class="row"><span class="k">核心资质</span><span class="v">环保工程专业承包壹级</span></div>
+          <div class="row"><span class="k">技术人员</span><span class="v">高级工程师 4 人</span></div>
+          <div class="row"><span class="k">环评师</span><span class="v">5 人</span></div>
+          <div class="row"><span class="k">从业人员</span><span class="v">120 余人</span></div>
+          <div class="row"><span class="k">施工队伍</span><span class="v">6 支专业队伍</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="culture">
+    <div class="wrap">
+      <div class="sec-head center">
+        <div class="no">企业文化</div>
+        <h2 class="serif">企业文化</h2>
+        <div class="en">The Enterprise Culture</div>
+        <div class="line"></div>
+      </div>
+      <div class="culture-slogan">
+        <div class="big serif">清水一泓 · 五洲环流</div>
+        <div class="sub">以一方净水，汇五洲清流</div>
+      </div>
+      <div class="culture-grid">
+        <div class="cult-card"><div class="n">企业文化</div><div class="t serif">日清日醒<br>日新日高</div></div>
+        <div class="cult-card"><div class="n">企业宗旨</div><div class="t serif">变废为宝<br>能源回收利用 改善生存环境</div></div>
+        <div class="cult-card"><div class="n">企业精神</div><div class="t serif">与时俱进 诚实守信<br>科技创新 精益求精 合作双赢</div></div>
+        <div class="cult-card"><div class="n">企业目标</div><div class="t serif">为一方人 做一番事<br>守一片水土 创一片蓝天</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="no">资质荣誉</div>
+        <h2 class="serif">资质证书</h2>
+        <div class="en">Company Qualification</div>
+        <div class="line"></div>
+      </div>
+      </div>
+      <!-- 证书实拍图 -->
+      <div class="cert-imgs">
+        <div class="cert-img-col">
+          <div class="cert-img-card">
+            <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/GRrIbwRbvocfX0xhW2ScskBFnPe" alt="建筑业企业资质证书">
+          </div>
+        </div>
+        <div class="cert-img-col">
+          <div class="cert-img-card">
+            <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/No0kbpdeZojntLxM3Fuc57dBnqd" alt="营业执照">
+          </div>
+          <div class="cert-img-card">
+            <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/GStFbsCqAoYV0BxsdepcZTZOnTG" alt="安全生产许可证">
+          </div>
+        </div>
+        <div class="cert-img-col">
+          <div class="cert-img-card">
+            <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/P8uobC1vNoAdsgx8baDcVMKhnyh" alt="环境污染治理能力评价证书">
+          </div>
+          <div class="cert-img-card">
+            <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Grs6baXX2oPNgXx6Acxc0Q75nWc" alt="环境污染治理能力评价证书">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="view" id="view-biz">
+  <div class="breadcrumb"></div>
+  <div class="page-hero">
+    <h1 class="serif">业务领域</h1>
+    <div class="en">Business Scope</div>
+    <div class="line"></div>
+    <div class="crumb">首页 / 业务领域</div>
+  </div>
+  <div class="section">
+    <div class="wrap">
+      <div class="biz-detail">
+        <div class="biz-dcard">
+          <div class="head">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2C8 6 5 9.5 5 13a7 7 0 0 0 14 0c0-3.5-3-7-7-11z"/></svg></div>
+            <div><div class="t serif">环保工程</div><div class="en">Environmental Engineering</div></div>
+          </div>
+          <div class="d">废水、废气、噪声治理工程的设计、施工、安装与调试。覆盖<b>医疗废水、工业废水、生活污水、有机废气与异味治理、中水回用</b>等场景，提供设计施工一体化交付，出水排放稳定满足国家标准。</div>
+        </div>
+        <div class="biz-dcard">
+          <div class="head">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
+            <div><div class="t serif">环保设备</div><div class="en">Environmental Equipment</div></div>
+          </div>
+          <div class="d">环保设备的设计、制作与销售。自有标准化制造车间，配备数控折弯机、剪板机、激光切割机等数控加工设备，可自主完成<b>一体化污水处理设备、气浮机、废气处理成套设备</b>等环保装备的全链条制造。</div>
+        </div>
+        <div class="biz-dcard">
+          <div class="head">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+            <div><div class="t serif">设施运营</div><div class="en">Facility Operation</div></div>
+          </div>
+          <div class="d">环保设施的运营管理、维护保养与运营技术咨询。配备专业运维团队，从日常巡检、药剂投加、设备保养到工艺调整全程托管，保障<b>污水处理与废气治理系统长期稳定达标运行</b>。</div>
+        </div>
+        <div class="biz-dcard">
+          <div class="head">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20h16"/><path d="M6 16l3-8 4 5 3-6 2 9"/></svg></div>
+            <div><div class="t serif">技术咨询</div><div class="en">Technical Consulting</div></div>
+          </div>
+          <div class="d">环保技术咨询、环境影响评价及验收服务。从项目立项、环评编制到竣工验收全过程提供专业技术支撑，协助业主顺利完成<b>环保手续办理与合规达标</b>。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="background:var(--white);">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="no">服务流程</div>
+        <h2 class="serif">全流程服务保障</h2>
+        <div class="en">Service Process</div>
+        <div class="line"></div>
+      </div>
+      <div class="flow">
+        <div class="flow-step"><div class="t">需求对接</div><div class="d">实地勘察水质水量与排放要求，明确治理目标与执行标准。</div></div>
+        <div class="flow-step"><div class="t">方案设计</div><div class="d">编制技术方案与工程造价，多方案比选，确定最优工艺路线。</div></div>
+        <div class="flow-step"><div class="t">制造施工</div><div class="d">自有车间设备制造，专业施工队伍现场安装，全程质量管控。</div></div>
+        <div class="flow-step"><div class="t">调试达标</div><div class="d">系统调试运行至出水/排放稳定达标，培训业主操作人员。</div></div>
+        <div class="flow-step"><div class="t">运营服务</div><div class="d">质保期内跟踪维护，长期提供运营管理与技术咨询服务。</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="no">制造能力</div>
+        <h2 class="serif">自有制造基地</h2>
+        <div class="en">Self-owned Manufacturing Base</div>
+        <div class="line"></div>
+      </div>
+      <div class="ws-desc">公司拥有标准化环保设备制造车间，配备数控折弯机、剪板机、激光切割机等大型数控加工设备，可自主完成一体化污水处理设备、气浮机、废气处理成套设备等环保装备的加工制造，从设计、制作到安装调试实现全链条交付，品质与工期全程可控。</div>
+      <div class="ws-grid">
+        <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/KKCXbjHDHops2tx83tdcq5FLnPb" alt="车间数控折弯机">
+        <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/PhaYbQTnEoYaCjxgOHNcQzObnRb" alt="车间设备箱体">
+        <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Ipyqb9g2lofkXgxt4uTc7jzCndq" alt="仓储加工区">
+        <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/E09Mb8axOo3Ub6xVxbDcNmNcnic" alt="激光切割机">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 视图：工程案例总览（二级） ============ -->
+<section class="view" id="view-cases">
+  <div class="breadcrumb"></div>
+  <div class="page-hero">
+    <h1 class="serif">工程案例</h1>
+    <div class="en">Engineering Cases</div>
+    <div class="line"></div>
+    <div class="crumb">首页 / 工程案例</div>
+  </div>
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="no">CASES</div>
+        <h2 class="serif">案例分类</h2>
+        <div class="line"></div>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card" data-nav="cases-medical">
+          <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/XatebMbAxoNqlrxAXbtc3XMqnph" alt="医疗废水处理工程">
+          <div class="mask"></div>
+          <div class="info">
+            <div class="num">01</div>
+            <div class="name serif">医疗废水处理工程</div>
+            <div class="desc">面向医院、医疗机构的高标准医疗废水治理，设计施工一体化</div>
+          </div>
+        </div>
+        <div class="cat-card" data-nav="cases-industrial">
+          <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/W9r2bX0kxohUWbxbf40c4HqCnMg" alt="工业废水处理工程">
+          <div class="mask"></div>
+          <div class="info">
+            <div class="num">02</div>
+            <div class="name serif">工业废水处理工程</div>
+            <div class="desc">高浓度、难降解工业废水，覆盖电子、军工、食品、酿酒等行业</div>
+          </div>
+        </div>
+        <div class="cat-card" data-nav="cases-wastegas">
+          <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/TQqMb98fCoN3Zdx8iprctQB9nae" alt="有机废气与异味治理">
+          <div class="mask"></div>
+          <div class="info">
+            <div class="num">03</div>
+            <div class="name serif">有机废气与异味治理</div>
+            <div class="desc">VOCs废气、涂装废气、发酵异味治理，RCO催化燃烧等工艺</div>
+          </div>
+        </div>
+        <div class="cat-card" data-nav="cases-waterreuse">
+          <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/XqwAbX8BKoGm70xLK2Wc3rLsnge" alt="中水回用工程">
+          <div class="mask"></div>
+          <div class="info">
+            <div class="num">04</div>
+            <div class="name serif">中水回用工程</div>
+            <div class="desc">废水深度处理后回用，实现水资源循环利用，降低用水成本</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 视图：医疗废水案例（三级） ============ -->
+<section class="view" id="view-cases-medical">
+  <div class="breadcrumb"></div>
+  <div class="page-hero">
+    <h1 class="serif">医疗废水处理工程</h1>
+    <div class="en">Medical Wastewater Treatment</div>
+    <div class="line"></div>
+    <div class="crumb">首页 / 工程案例 / 医疗废水</div>
+  </div>
+  <div class="section">
+    <div class="wrap">
+      <div class="back-bar"><a class="back-btn" data-nav="cases">← 返回案例分类</a></div>
+      <div class="case-group">
+        <div class="note" style="margin-bottom:20px;color:var(--ink-soft);font-size:13px;">面向医院、医疗机构的高标准医疗废水治理，全部为设计施工一体化项目。</div>
+
+        <div class="case-card">
+          <div class="hd"><div class="name serif">南阳市中心医院 医疗废水处理工程</div><div class="scope">3500 吨/天</div></div>
+          <div class="bd">
+            <div class="desc">污水处理站于2018年建成并投入使用，设计处理规模<b>3500吨/天</b>。主要采用<b>"厌氧生物膜法+好氧生物膜法+沉淀+消毒"</b>的处理工艺。构筑物采用全地下钢筋混凝土结构，顶部可供大型车辆及消防车通行；地上2层附属用房包含控制室、值班室、风机房、污泥脱水机房、消毒间、仓库等配套设施。</div>
+            <div class="tags"><span>设计施工一体化</span><span>全地下结构</span><span>2018年投用</span></div>
+            <div class="imgs">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Z2sAbE5W4o6AipxI1lmcn36BnWe" alt="中心医院污水处理站附属用房外观">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/J99vbPXWJoz5fbxYbZscCXXQnIh" alt="风机房罗茨风机设备">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Rrx0bST67oiyjcx884mci5Pynnf" alt="控制室配电柜">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/UisvbrgmYo9neSx4sgycnFPonlb" alt="消毒间设备">
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card single-img">
+          <div class="hd"><div class="name serif">南阳市第二人民医院 医疗废水处理工程</div><div class="scope">3500 吨/天</div></div>
+          <div class="bd">
+            <div class="desc">污水处理站于2021年建成投用，采用<b>"改良AO工艺+沉淀+消毒"</b>工艺，消毒方式为电解食盐制取次氯酸钠，全程自动化控制运行。构筑物全地下钢筋混凝土结构，地上附属用房含控制值班室、风机房、污泥脱水机房、消毒间、在线监测室等。</div>
+            <div class="tags"><span>电解食盐消毒</span><span>全自动化控制</span><span>2021年投用</span></div>
+            <div class="imgs" style="grid-template-columns:1fr;">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/SKQYb57iQoalF0xUN4qcahF3nPh" alt="第二人民医院医疗废水处理工程" style="aspect-ratio:auto;object-fit:contain;">
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card single-img">
+          <div class="hd"><div class="name serif">南阳市眼科医院 医疗废水处理工程</div><div class="scope">500 吨/天</div></div>
+          <div class="bd">
+            <div class="desc">新院区改建项目配套污水处理工程，位于南阳市卧龙区中州中路268号，按<b>500m³/d</b>设计建设，2023年6月建成投用，采用<b>"改良AO工艺+沉淀+消毒"</b>工艺。构筑物全地下钢筋混凝土结构，配套除臭系统及降噪措施，避免异味及噪声影响周边环境。</div>
+            <div class="tags"><span>全地下结构</span><span>配套除臭降噪</span><span>2023年投用</span></div>
+            <div class="imgs" style="grid-template-columns:1fr;">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/UCPlbmUZaooPVPxlscWcNSYJnhd" alt="眼科医院医疗废水处理工程" style="aspect-ratio:auto;object-fit:contain;">
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card single-img">
+          <div class="hd"><div class="name serif">南阳市高新区医院 医疗废水处理工程</div><div class="scope">1200 吨/天</div></div>
+          <div class="bd">
+            <div class="desc">南阳高新医院污水处理站于2020年建成投用，采用<b>半地上半开放</b>形式建设，设计处理规模<b>1200吨/天</b>，主要采用<b>"厌氧生物膜法+好氧生物膜法+沉淀+消毒"</b>工艺。</div>
+            <div class="tags"><span>半地上半开放</span><span>生物膜法工艺</span><span>2020年投用</span></div>
+            <div class="imgs" style="grid-template-columns:1fr;">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/RcACbrXQzoGe7lxwSIScDbggnEc" alt="高新区医院医疗废水处理工程" style="aspect-ratio:auto;object-fit:contain;">
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card single-img">
+          <div class="hd"><div class="name serif">新野县人民医院 医疗废水处理工程</div><div class="scope">800 + 400 吨/天</div></div>
+          <div class="bd">
+            <div class="desc">一期于2016年建成，规模<b>800吨/天</b>，采用<b>"改良AO工艺+沉淀+消毒"</b>工艺，半地上半开放建设。2020年扩建二期<b>400吨/天</b>处理站，其中包含100吨/天的传染病废水处理。</div>
+            <div class="tags"><span>一期+二期扩建</span><span>含传染病废水处理</span><span>2016年投用</span></div>
+            <div class="imgs" style="grid-template-columns:1fr;">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/MpnDbVs7xoQDq2x1C0qcQ8e3nxf" alt="新野县人民医院医疗废水处理工程" style="aspect-ratio:auto;object-fit:contain;">
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card single-img">
+          <div class="hd"><div class="name serif">社旗县中医院 医疗废水处理工程</div><div class="scope">400 吨/天</div></div>
+          <div class="bd">
+            <div class="desc">处理规模<b>400吨/天</b>，采用<b>"厌氧生物膜法+好氧生物膜法+沉淀+消毒"</b>工艺，出水稳定达到《城镇污水处理厂污染物排放标准》（GB18918-2002）<b>一级A标准</b>，采用紫外线消毒。</div>
+            <div class="tags"><span>出水一级A标准</span><span>紫外线消毒</span></div>
+            <div class="imgs" style="grid-template-columns:1fr;">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/X3AIb6iXAoLNnuxCqG5cKxNJnEe" alt="社旗县中医院医疗废水处理工程" style="aspect-ratio:auto;object-fit:contain;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 视图：工业废水案例（三级） ============ -->
+<section class="view" id="view-cases-industrial">
+  <div class="breadcrumb"></div>
+  <div class="page-hero">
+    <h1 class="serif">工业废水处理工程</h1>
+    <div class="en">Industrial Wastewater Treatment</div>
+    <div class="line"></div>
+    <div class="crumb">首页 / 工程案例 / 工业废水</div>
+  </div>
+  <div class="section">
+    <div class="wrap">
+      <div class="back-bar"><a class="back-btn" data-nav="cases">← 返回案例分类</a></div>
+      <div class="case-group">
+        <div class="note" style="margin-bottom:20px;color:var(--ink-soft);font-size:13px;">面向工业企业的高浓度、难降解废水治理，覆盖电子、军工、食品、酿酒、园区污水等行业。</div>
+
+        <div class="case-card">
+          <div class="hd"><div class="name serif">金冠电气股份有限公司 工业废水处理项目</div><div class="scope">200 m³/d</div></div>
+          <div class="bd">
+            <div class="desc">金冠内乡智能电气产业园污水处理系统处理能力<b>200m³/d</b>，出水满足《污水综合排放标准》(GB8978-1996)表2三级标准、湍东污水处理厂进水水质要求及《电子工业水污染物排放标准》(GB39731-2020)表1间接排放标准。</div>
+            <div class="tags"><span>电子工业废水</span><span>自动化控制系统</span><span>出水在线监测</span></div>
+            <div class="imgs" style="grid-template-columns:1fr;">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/SGHYbSMARoTIrjxjTYtczaz1nad" alt="金冠电气工业废水处理项目" style="aspect-ratio:auto;object-fit:contain;">
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="hd"><div class="name serif">淮滨县第二污水处理厂 扩建工程</div><div class="scope">5万 m³/d 设备供货</div></div>
+          <div class="bd">
+            <div class="desc">扩建工程使总处理规模达到<b>10万m³/d</b>。工程含粗格栅及提升泵房、细格栅旋流沉砂池、调节池、涡凹气浮池及碳源投加间、水解酸化池等。我公司提供处理能力为<b>5万m³/d的一体化涡凹气浮机及配套电气自控系统</b>，设备已全部安装完毕。</div>
+            <div class="tags"><span>一体化涡凹气浮机</span><span>配套电气自控系统</span><span>已安装完毕</span></div>
+            <div class="imgs" style="grid-template-columns:1fr;">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/MwgaboXvao4hhzxTcAacXG3anxc" alt="淮滨县第二污水处理厂扩建工程" style="aspect-ratio:auto;object-fit:contain;">
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="hd"><div class="name serif">南阳光电孵化园北区 污水处理工程</div><div class="scope">1500 吨/天</div></div>
+          <div class="bd">
+            <div class="desc">2019年11月建成投用，位于南阳市信臣西路光电创新创业园，处理规模<b>1500吨/天</b>，污水来源为园区生产废水（高悬浮物废水），工艺为<b>"调节+絮凝沉淀+AO生化法+MBR"</b>，出水达标排放。</div>
+            <div class="tags"><span>高悬浮物废水</span><span>MBR膜工艺</span><span>2019年投用</span></div>
+            <div class="imgs" style="grid-template-columns:1fr;">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Kft5bnAxyoHK4NxTrhNcTXidnTc" alt="南阳光电孵化园北区污水处理工程" style="aspect-ratio:auto;object-fit:contain;">
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="hd"><div class="name serif">河南赊店老酒股份有限公司 污水处理项目</div><div class="scope">700 吨/天</div></div>
+          <div class="bd">
+            <div class="desc">2016年建成投用，位于南阳市社旗县，处理规模<b>700吨/天</b>，污水来源为酿酒生产废水及设备清洗废水（高浓度有机废水），工艺为<b>"调节+气浮+UASB厌氧反应器+AO生化法+絮凝沉淀"</b>，出水达标排放。</div>
+            <div class="tags"><span>高浓度有机废水</span><span>UASB厌氧工艺</span><span>2016年投用</span></div>
+            <div class="imgs">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Cb6DbNtFuocu4Gxnl9CcyvRwnag" alt="赊店老酒污水站池体">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/HPSRbyqJLo34bsxJApAcP7xenCg" alt="一体化气浮设备">
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="hd"><div class="name serif">南阳北方向东工业有限公司 电镀行业废水处理工程</div><div class="scope">军工企业</div></div>
+          <div class="bd">
+            <div class="desc">南阳北方向东工业有限公司是中国兵器工业集团豫西工业集团控股的军工产品生产企业，前身为始建于1968年的国营第五一四三厂。我公司承建其<b>电镀行业废水处理工程</b>，保障含重金属电镀废水稳定达标处理。</div>
+            <div class="tags"><span>电镀废水治理</span><span>军工企业配套</span></div>
+            <div class="imgs" style="grid-template-columns:1fr;">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/RWjjb2iPJoDYJNxzu6Ecna4RnCd" alt="南阳北方向东工业电镀废水处理工程" style="aspect-ratio:auto;object-fit:contain;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 视图：有机废气案例（三级） ============ -->
+<section class="view" id="view-cases-wastegas">
+  <div class="breadcrumb"></div>
+  <div class="page-hero">
+    <h1 class="serif">有机废气与异味治理</h1>
+    <div class="en">VOCs & Odor Treatment</div>
+    <div class="line"></div>
+    <div class="crumb">首页 / 工程案例 / 废气治理</div>
+  </div>
+  <div class="section">
+    <div class="wrap">
+      <div class="back-bar"><a class="back-btn" data-nav="cases">← 返回案例分类</a></div>
+      <div class="case-group">
+        <div class="note" style="margin-bottom:20px;color:var(--ink-soft);font-size:13px;">覆盖 VOCs 废气治理、涂装废气、发酵异味等，RCO 催化燃烧、生物净化等成熟工艺。</div>
+
+        <div class="case-card">
+          <div class="hd"><div class="name serif">金冠电器股份有限公司 有机废气处理项目</div><div class="scope">20000 m³/h</div></div>
+          <div class="bd">
+            <div class="desc">金冠电气新增玻璃釉生产线，废气主要污染物为颗粒物和有机污染物。处理能力<b>20000m³/h</b>，工艺为<b>"气旋塔+除雾过滤+干式过滤器+RCO催化燃烧"</b>，满足豫环攻坚办【2017】162号限值要求。</div>
+            <div class="tags"><span>RCO催化燃烧</span><span>豫环攻坚办162号达标</span></div>
+            <div class="imgs">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/JpGlb32peoIXGUxsmrkcvfqcntf" alt="金冠电器废气处理设备">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/CFzdbuP0TonLMdxNFyRctMgKneS" alt="废气处理监控界面">
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="hd"><div class="name serif">某集团公司 涂装废气治理项目</div><div class="scope">30000 m³/h</div></div>
+          <div class="bd">
+            <div class="desc">处理涂装车间甲苯、二甲苯等挥发性有机物，工艺采用<b>"袋式除尘+干式过滤+RCO催化燃烧"</b>，处理规模<b>30000m³/h</b>，满足豫环攻坚办【2017】162号限值要求达标排放。</div>
+            <div class="tags"><span>涂装废气治理</span><span>RCO催化燃烧</span></div>
+            <div class="imgs">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/XFambPb61oUimPxKDeKcTqtFnCd" alt="集团公司废气处理设备">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/NUiBbHmfooj4K2xTApRcLWFpno9" alt="集团公司废气处理设施">
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="hd"><div class="name serif">中南钻石有限公司 有机废气处理项目</div><div class="scope">60000 m³/h</div></div>
+          <div class="bd">
+            <div class="desc">铰链梁车间台车炉加热工件过程产生有机废气，处理规模<b>60000m³/h</b>，采用<b>"喷淋塔+干式过滤器+RCO催化燃烧"</b>工艺，稳定达到豫环攻坚办【2017】162号限值要求。</div>
+            <div class="tags"><span>大流量废气治理</span><span>RCO催化燃烧</span></div>
+            <div class="imgs" style="grid-template-columns:1fr;">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Vy2cbC7LxovPZqx0mZOcuiAyndh" alt="中南钻石有机废气处理项目" style="aspect-ratio:auto;object-fit:contain;">
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="hd"><div class="name serif">某酒业公司 发酵车间异味治理项目</div><div class="scope">15000 m³/h</div></div>
+          <div class="bd">
+            <div class="desc">制曲、发酵车间生产过程中产生大量NH₃、H₂S、CH₄、醛类、酯类等恶臭气体，本项目对车间异味收集处理，工艺采用<b>"化学洗涤+生物净化"</b>，设计处理能力<b>15000m³/h</b>。</div>
+            <div class="tags"><span>恶臭气体治理</span><span>化学洗涤+生物净化</span></div>
+            <div class="imgs">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/VDbjbTZ87oOgIHxxMWLczYI4nsb" alt="金弥酒业异味处理设备">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/EUj3bGj38ovAUTxGZ0rcNHQDnTb" alt="异味处理设备">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 视图：中水回用案例（三级） ============ -->
+<section class="view" id="view-cases-waterreuse">
+  <div class="breadcrumb"></div>
+  <div class="page-hero">
+    <h1 class="serif">中水回用工程</h1>
+    <div class="en">Water Reuse Projects</div>
+    <div class="line"></div>
+    <div class="crumb">首页 / 工程案例 / 中水回用</div>
+  </div>
+  <div class="section">
+    <div class="wrap">
+      <div class="back-bar"><a class="back-btn" data-nav="cases">← 返回案例分类</a></div>
+      <div class="case-group">
+        <div class="note" style="margin-bottom:20px;color:var(--ink-soft);font-size:13px;">将工业废水、厂区污水深度处理后回用，实现水资源循环利用，降低企业用水成本。</div>
+
+        <div class="case-card">
+          <div class="hd"><div class="name serif">中南钻石有限公司 中水回用项目工程</div><div class="scope">220 吨/天</div></div>
+          <div class="bd">
+            <div class="desc">2020年6月建成，位于南阳市方城县广阳镇，设计规模<b>220吨/天</b>。水源为厂区生活污水及生产清洗废水，工艺为<b>"调节+气浮+AO生化法+MBR工艺+消毒"</b>，出水用于厂区景观池塘用水。</div>
+            <div class="tags"><span>MBR膜工艺</span><span>景观回用</span><span>2020年投用</span></div>
+            <div class="imgs" style="grid-template-columns:1fr;">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/OQPobK7UoofwVkxhwXmcmm1jnAd" alt="中南钻石中水回用项目" style="aspect-ratio:auto;object-fit:contain;">
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="hd"><div class="name serif">南阳中联水泥有限公司 中水回用项目工程</div><div class="scope">12 吨/小时</div></div>
+          <div class="bd">
+            <div class="desc">2021年4月建成，位于南阳市镇平县，回用水规模<b>12吨/小时</b>。工艺为<b>"精密过滤+砂滤+超滤+反渗透"</b>，出水用于中联水泥余热发电项目生产用水。</div>
+            <div class="tags"><span>反渗透深度处理</span><span>余热发电回用</span><span>2021年投用</span></div>
+            <div class="imgs" style="grid-template-columns:1fr;">
+              <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Vyndb6ShEoLahPxs2GScTZ2Knmd" alt="南阳中联水泥中水回用项目" style="aspect-ratio:auto;object-fit:contain;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 视图：环保业绩 ============ -->
+<section class="view" id="view-perf">
+  <div class="breadcrumb"></div>
+  <div class="page-hero">
+    <h1 class="serif">环保工程业绩</h1>
+    <div class="en">Performance in Environmental Protection Projects</div>
+    <div class="line"></div>
+    <div class="crumb">首页 / 环保业绩</div>
+  </div>
+  <div class="section">
+    <div class="wrap">
+      <div class="perf-grid">
+        <div class="perf-col">
+          <div class="tt">市政与医疗环保</div>
+          <ol>
+            <li>河南北方红阳机电有限公司环境整治项目</li>
+            <li>南阳医专二附院环保工程</li>
+            <li>南阳医专三附院环保工程</li>
+            <li>豫西工业集团职工家属区物业分离改造项目配套环保工程</li>
+            <li>汤阴县城南污水处理厂设备供货安装项目</li>
+            <li>南召县卫生职业中专附属医院环保处理工程</li>
+            <li>南召县妇幼保健院环保治理项目</li>
+            <li>南阳双龙实业公司VOCs气体治理设备采购项目</li>
+            <li>南阳双龙实业公司VOCs气体治理设备运维项目</li>
+            <li>社旗县妇幼保健院环保治理项目</li>
+            <li>社旗县仲景苑环保治理工程</li>
+            <li>南阳市第四人民医院环保设备采购项目</li>
+            <li>桐柏县惠民医院环保治理项目</li>
+            <li>河南省洛阳市新安县义洛煤矿环保工程</li>
+            <li>新野县卫生职业中等专业学校附属医院环保治理项目</li>
+            <li>方城凯铭塑料制品有限公司环保工程</li>
+          </ol>
+        </div>
+        <div class="perf-col">
+          <div class="tt">社区与医院环保</div>
+          <ol>
+            <li>盆窑社区环保处理工程</li>
+            <li>李八庙社区环保处理工程</li>
+            <li>菱角池社区环保处理项目</li>
+            <li>姜营社区环保处理项目</li>
+            <li>玉皇庙社区环保处理项目</li>
+            <li>双铺社区环保处理项目</li>
+            <li>龙腾社区环保处理项目</li>
+            <li>南阳市第四完全学校环保工程</li>
+            <li>南阳市第二人民医院污水站除臭项目</li>
+            <li>南阳市眼科医院污水站臭气治理项目</li>
+            <li>天津市蓟州区上仓污水厂二期工程</li>
+            <li>棚户区改造平安社区环保处理项目</li>
+            <li>新乡医学院第一附属医院环保治理工程</li>
+            <li>棚户区改造吉祥社区环保处理项目</li>
+            <li>江西省鑫普德科技有限公司除臭项目</li>
+            <li>中南钻石有限公司有机废气及烟气回收系统运维项目</li>
+          </ol>
+        </div>
+        <div class="perf-col">
+          <div class="tt">工业与食品环保</div>
+          <ol>
+            <li>凌宝珠光颜料有限公司环保工程</li>
+            <li>新纺集团有限公司环保处理项目</li>
+            <li>濮阳市油田总医院环保处理工程</li>
+            <li>南阳市果然风情食品有限公司环保处理项目</li>
+            <li>河南三源粮油有限公司环保工程</li>
+            <li>国网新源回龙抽水水电站环境治理项目</li>
+            <li>桐柏金豫食品开发有限公司恶臭治理项目</li>
+            <li>南阳北方向东工业有限公司生产区环保处理项目</li>
+            <li>南阳官庄工区南石康复医院环保治理改造项目</li>
+            <li>官庄工区涧河社区卫生服务中心环保设备采购项目</li>
+            <li>中南钻石有限公司研发中心废气治理项目</li>
+            <li>中南钻石有限公司废油再生废气处理项目</li>
+            <li>唐河刘岗医院污水站废气处理项目</li>
+            <li>南阳万和创伤显微外科医院环保治理工程</li>
+            <li>鸡泽县污水处理厂设备配套采购项目</li>
+            <li>河南北方红阳机电有限公司电镀线废气设备维修项目</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 视图：联系我们 ============ -->
+<section class="view" id="view-contact">
+  <div class="breadcrumb"></div>
+  <div class="page-hero">
+    <h1 class="serif">联系我们</h1>
+    <div class="en">Contact Us</div>
+    <div class="line"></div>
+    <div class="crumb">首页 / 联系我们</div>
+  </div>
+  <div class="section">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div>
+          <div class="contact-card">
+            <div class="k">公司地址</div>
+            <div class="v">河南省南阳市光武大道三川金融街</div>
+            <div class="sub">总部办公 · 欢迎实地考察</div>
+          </div>
+          <div class="contact-card" style="margin-top:16px;">
+            <div class="k">联系电话</div>
+            <div class="v">张先生 15136665188</div>
+            <div class="sub">业务咨询 · 技术服务 · 项目合作</div>
+          </div>
+          <div class="contact-card" style="margin-top:16px;">
+            <div class="k">电子邮箱</div>
+            <div class="v">henanyihuan@126.com</div>
+            <div class="sub">方案资料索取 · 邮件沟通</div>
+          </div>
+          <div class="contact-card" style="margin-top:16px;">
+            <div class="k">公司网址</div>
+            <div class="v">www.henanyihuan.com</div>
+            <div class="sub">河南一环环境工程有限公司</div>
+          </div>
+        </div>
+        <div class="form-box">
+          <h3 class="serif">在线留言</h3>
+          <div class="tip">告诉我们您的治理需求，我们将尽快与您联系。</div>
+          <form id="contactForm" novalidate>
+            <label for="f_name">您的称呼</label>
+            <input type="text" id="f_name" placeholder="请输入您的姓名或单位">
+            <label for="f_phone">联系电话</label>
+            <input type="text" id="f_phone" placeholder="请输入手机号或座机">
+            <label for="f_msg">需求描述</label>
+            <textarea id="f_msg" placeholder="例如：医院污水站改造 / 废气治理 / 设备采购……"></textarea>
+            <button type="submit" class="btn solid" style="margin-top:18px;border:none;">提交留言</button>
+          </form>
+          <div class="form-msg" id="formMsg">已收到您的留言，我们将尽快与您联系。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer class="footer">
+  <div class="inner">
+    <img class="logo" src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/OXHYbq0xMoKEZZxDFSccBpv0nCf" alt="河南一环环境工程有限公司 logo">
+    <div class="name serif">河南一环环境工程有限公司</div>
+    <div class="en">HENAN YIHUAN ENVIRONMENTAL ENGINEERING CO., LTD</div>
+    <div class="slogan serif">清水一泓 · 五洲环流　|　以质量求生存 · 诚信合作双赢</div>
+    <div class="contact">
+      <div class="item"><div class="k">公司地址</div><div class="v">河南省南阳市光武大道三川金融街</div></div>
+      <div class="item"><div class="k">联系电话</div><div class="v">张先生 15136665188</div></div>
+      <div class="item"><div class="k">电子邮箱</div><div class="v">henanyihuan@126.com</div></div>
+      <div class="item"><div class="k">公司网址</div><div class="v">www.henanyihuan.com</div></div>
+    </div>
+    <div class="copy">为一方人 做一番事 守一方水土 创一片蓝天　·　© 2026 河南一环环境工程有限公司</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // 视图列表：home / about / biz / cases / cases-medical / cases-industrial / cases-wastegas / cases-waterreuse / perf / contact
+  var views=['home','about','biz','cases','cases-medical','cases-industrial','cases-wastegas','cases-waterreuse','perf','contact'];
+  // 导航激活状态映射：三级页归属到哪个一级导航高亮
+  var navMap={
+    'home':'home','about':'about','biz':'biz','perf':'perf','contact':'contact',
+    'cases':'cases','cases-medical':'cases','cases-industrial':'cases','cases-wastegas':'cases','cases-waterreuse':'cases'
+  };
+  function show(name){
+    if(views.indexOf(name)<0) name='home';
+    views.forEach(function(v){
+      var el=document.getElementById('view-'+v);
+      if(el)el.classList.toggle('active',v===name);
+    });
+    var activeNav=navMap[name]||name;
+    document.querySelectorAll('[data-nav]').forEach(function(a){
+      a.classList.toggle('active',a.getAttribute('data-nav')===activeNav);
+    });
+    closeMenu();
+    window.scrollTo(0,0);
+    if(history.replaceState){history.replaceState(null,'','#'+name);}
+  }
+  function current(){
+    var h=location.hash.replace('#','');
+    return views.indexOf(h)>-1?h:'home';
+  }
+  function closeMenu(){
+    document.getElementById('mobileMenu').classList.remove('open');
+    document.getElementById('burger').classList.remove('open');
+  }
+  document.querySelectorAll('[data-nav]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      show(a.getAttribute('data-nav'));
+    });
+  });
+  var burger=document.getElementById('burger');
+  burger.addEventListener('click',function(){
+    var open=document.getElementById('mobileMenu').classList.toggle('open');
+    burger.classList.toggle('open',open);
+  });
+  window.addEventListener('hashchange',function(){show(current());});
+  show(current());
+  var form=document.getElementById('contactForm');
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var n=document.getElementById('f_name').value.trim();
+      var p=document.getElementById('f_phone').value.trim();
+      var msg=document.getElementById('formMsg');
+      if(!n||!p){msg.style.display='block';msg.textContent='请填写称呼和联系电话，方便我们与您联系。';return;}
+      msg.style.display='block';msg.textContent='已收到您的留言，我们将尽快与您联系。';
+      form.reset();
+    });
+  }
+
+  // 证书轮播
+  var certIdx=0;
+  var certSlides=document.querySelectorAll('#certTrack .cert-slide');
+  var certDotsBox=document.getElementById('certDots');
+  if(certSlides.length){
+    for(var i=0;i<certSlides.length;i++){
+      var d=document.createElement('span');
+      d.onclick=(function(n){return function(){certGo(n);};})(i);
+      certDotsBox.appendChild(d);
+    }
+    function certRender(){
+      certSlides.forEach(function(s,i){s.classList.toggle('active',i===certIdx);});
+      certDotsBox.querySelectorAll('span').forEach(function(s,i){s.classList.toggle('active',i===certIdx);});
+    }
+    window.certSlide=function(dir){certIdx=(certIdx+dir+certSlides.length)%certSlides.length;certRender();};
+    window.certGo=function(n){certIdx=n;certRender();};
+    certRender();
+    setInterval(function(){certSlide(1);},4000);
+  }
+})();
+</script>
+</body>
+</html>
